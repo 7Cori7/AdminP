@@ -23,7 +23,7 @@ export const obtenerProductos = async () => {
     }
 }
 
-export const producto = async id => {
+export const obtenerProducto = async id => {
     try{
         const resultado = await fetch(`${url}/${id}`); //<--- como es extrae un producto se busca por el id en la ruta
         const producto = resultado.json();
