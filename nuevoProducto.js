@@ -27,7 +27,7 @@ async function validarProducto(e){
         return;
     }else{
         await nuevoProducto(producto);
-        window.location.href = '/adminPanel/index.html';
+        window.location.href = 'index.html';
     }
 
 

@@ -119,6 +119,24 @@
       "nombre": "Helado de chocolate",
       "precio": 2,
       "categoria": 2
+    },
+    {
+      "nombre": "Empanada de Pollo",
+      "precio": "1",
+      "categoria": "4",
+      "id": 21
+    },
+    {
+      "nombre": "Empanada de Carne",
+      "precio": "1",
+      "categoria": "4",
+      "id": 22
+    },
+    {
+      "nombre": "Empanada de Atún",
+      "precio": "1",
+      "categoria": "4",
+      "id": 23
     }
   ],
   "Cliente": []

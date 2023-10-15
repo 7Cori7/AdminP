@@ -10,11 +10,13 @@ const inputId = document.querySelector('#id');
 
 document.addEventListener('DOMContentLoaded', async ()=>{
     //consultar en la url para extraer y guardar el id que enviamos en la ruta
-    const parametroUrl = new URLSearchParams(window.location.search)
+
+    
+    const parametroURL = new URLSearchParams(window.location.search);
 
     console.log(window.location.search)
 
-    const idProducto = parseInt(parametroUrl.get('id'));
+    const idProducto = parseInt(parametroURL.get('id'));
 
     console.log(idProducto)
 
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     mostrarProducto(producto);
 
     //hacer el registro de la actualizacion
-    const formulario = documente.querySelector('#formulario');
+    const formulario = document.querySelector('#formulario');
     formulario.addEventListener('submit', validarProducto);
 
 })
@@ -53,6 +55,6 @@ async function validarProducto(e){
         return;
     }else{
         await editarProducto(producto);
-        window.location.href = '/adminPanel/index.html';
+        window.location.href = 'index.html';
     }
 }

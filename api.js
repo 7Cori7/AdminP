@@ -25,9 +25,9 @@ export const obtenerProductos = async () => {
 
 export const obtenerProducto = async id => {
     try{
-        const resultado = await fetch(`${url}/${id}`); //<--- como es extrae un producto se busca por el id en la ruta
-        const producto = resultado.json();
-        return producto;
+        const resultado = await fetch(`${url}/${id}`);
+        const product = resultado.json();
+        return product;
     }catch(error){
         console.log(error)
     }
@@ -36,7 +36,7 @@ export const obtenerProducto = async id => {
 export const editarProducto = async producto => {
     try{
         await fetch(`${url}/${producto.id}`,{
-            method:'PUT', //<--metodo que actualiza de forma mas especifica (un elemento) usando el id
+            method:'PUT',
             body:JSON.stringify(producto),
             headers:{
                 'Content-Type': 'application/json'
