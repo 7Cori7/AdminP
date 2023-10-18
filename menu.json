@@ -145,10 +145,16 @@
       "id": 24
     },
     {
-      "nombre": "expreso",
+      "nombre": "Expreso",
       "precio": "1",
       "categoria": "5",
       "id": 25
+    },
+    {
+      "nombre": "Pizza Especial",
+      "precio": "15",
+      "categoria": "1",
+      "id": 26
     }
   ]
 }

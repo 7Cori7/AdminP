@@ -10,7 +10,13 @@ async function mostrarProductos() {
 
     console.log(productos);
 
-    productos.forEach(i => {
+    const porCategorias = productos.sort((a,b)=>{
+        return a.categoria - b.categoria;
+    })
+
+    console.log(porCategorias)
+
+    porCategorias.forEach(i => {
         const {nombre, precio, categoria, id} = i;
         const row = document.createElement('tr');
 
