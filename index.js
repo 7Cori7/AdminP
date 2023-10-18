@@ -38,7 +38,7 @@ async function mostrarProductos(){
         <a href="#" data-producto="${id}" class="text-red-600 hover:text-red-900 eliminar">Eliminar</a>
         </td>
 
-        `;
+        `
         listado.appendChild(row);
 
     })
