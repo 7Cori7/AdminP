@@ -1,6 +1,6 @@
 import { obtenerProducto, editarProducto } from "./api.js";
 import { mostrarAlerta } from "./alerta.js";
-import { validacion } from "./nuevoProducto.js";
+
 
 //* SELECTORES
 const nombreInput = document.querySelector('#nombre');
@@ -57,4 +57,8 @@ async function validarProducto(e){
         await editarProducto(producto);
         window.location.href = 'index.html';
     }
+}
+
+function validacion(obj){
+    return !Object.values(obj).every(i=> i !== ''); //<---esta es otra manera de iterar un objeto y el every retorna un true o un false, en este caso valida el objeto producto
 }

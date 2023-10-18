@@ -36,7 +36,7 @@ export const obtenerProducto = async id => {
 export const editarProducto = async producto => {
     try{
         await fetch(`${url}/${producto.id}`,{
-            method:'PUT',
+            method:'PATCH',
             headers:{
                 'Content-Type':'application/json'
             },

@@ -137,6 +137,18 @@
       "precio": "1",
       "categoria": "4",
       "id": 23
+    },
+    {
+      "nombre": "Tiramisu",
+      "precio": "4",
+      "categoria": "2",
+      "id": 24
+    },
+    {
+      "nombre": "expreso",
+      "precio": "1",
+      "categoria": "5",
+      "id": 25
     }
   ]
 }
