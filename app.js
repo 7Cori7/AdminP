@@ -1,10 +1,27 @@
 import { obtenerProductos, eliminarProducto } from "./api.js"; 
 
-const listado = document.querySelector('#listado-Productos');
+const admin = JSON.parse(localStorage.getItem('user'));
+console.log(admin)
 
+//Validar la ruta:
+if(!admin){
+    //caso de que el usuario no este en el localsotrage(no inicio sesion)
+    window.location.href = '/login.html';
+}
+
+//SELECTORES
+const listado = document.querySelector('#listado-Productos');
+const cerrarBtn = document.querySelector('#cerrar-btn');
+
+//EVENTOS
 document.addEventListener('DOMContentLoaded', mostrarProductos);
 listado.addEventListener('click', confirmarEliminar);
+cerrarBtn.addEventListener('click', async e=> {
+    localStorage.removeItem('user');
+    window.location.href = '/login.html';
+})
 
+//FUNCIONES:
 async function mostrarProductos() {
     const productos = await obtenerProductos();
 

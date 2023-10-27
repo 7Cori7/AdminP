@@ -45,8 +45,8 @@
     {
       "id": 8,
       "nombre": "Jugo de Naranja",
-      "precio": 2,
-      "categoria": 3
+      "precio": "2",
+      "categoria": "3"
     },
     {
       "id": 9,
@@ -155,6 +155,11 @@
       "precio": "15",
       "categoria": "1",
       "id": 26
+    }
+  ],
+  "admin": [
+    {
+      "nombre": "Cori"
     }
   ]
 }
